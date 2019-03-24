@@ -86,8 +86,31 @@
                                         <div class="wrapper">
                                             <div class="grid_12">
                                             	<div class="indent-left">
-                                                	<h3 class="p2">Contact Form</h3>
-                                                    <form id="contact-form" method="post" enctype="multipart/form-data" action="../contacts/send_form_email/">                    
+                                                    <h3 class="p2">Contact Form</h3>
+                                                    <form name="contact" method="POST" data-netlify="true">
+                                                        <p>
+                                                          <label>Your Name: <input type="text" name="name" /></label>   
+                                                        </p>
+                                                        <p>
+                                                          <label>Your Email: <input type="email" name="email" /></label>
+                                                        </p>
+                                                        <p>
+                                                          <label>Your Phone: <input type="phone" name="phone" /></label>
+                                                        </p>
+                                                        <!-- <p>
+                                                          <label>Your Role: <select name="role[]" multiple>
+                                                            <option value="leader">Leader</option>
+                                                            <option value="follower">Follower</option>
+                                                          </select></label>
+                                                        </p> -->
+                                                        <p>
+                                                          <label>Message: <textarea name="message"></textarea></label>
+                                                        </p>
+                                                        <p>
+                                                          <button type="submit">Send</button>
+                                                        </p>
+                                                      </form>
+                                                    <!-- <form id="contact-form" method="post" enctype="multipart/form-data" action="../contacts/send_form_email/">                    
                                                         <fieldset>
                                                               <label><span class="text-form">First Name:</span><input name="first_name" type="text"/></label>
 															  <label><span class="text-form">Last Name:</span><input name="last_name" type="text"/></label>
@@ -99,7 +122,7 @@
                                                                   <a class="button" href="#" onclick="document.getElementById('contact-form').submit()">Send</a>
                                                               </div>                             
                                                         </fieldset>						
-                                                    </form>
+                                                    </form> -->
                                                 </div>
                                             </div>
                                         </div>
